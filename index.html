@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Moja strona</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(120deg, #1e1e1e, #2c2c2c);
+            color: white;
+        }
+
+        header {
+            padding: 40px;
+            text-align: center;
+            background: #111;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #00bfff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background: #1b1b1b;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        button {
+            background: #00bfff;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0099cc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Witaj na mojej stronie</h1>
+    <p>Moja pierwsza strona internetowa 🚀</p>
+</header>
+
+<nav>
+    <a href="#o-mnie">O mnie</a>
+    <a href="#projekty">Projekty</a>
+    <a href="#kontakt">Kontakt</a>
+</nav>
+
+<section id="o-mnie">
+    <div class="card">
+        <h2>👤 O mnie</h2>
+        <p>
+            Cześć! Uczę się tworzyć strony internetowe w HTML, CSS i JavaScript.
+            To jest moja pierwsza własna strona.
+        </p>
+    </div>
+</section>
+
+<section id="projekty">
+    <div class="card">
+        <h2>💻 Projekty</h2>
+        <ul>
+            <li>Moja pierwsza strona</li>
+            <li>Strona na GitHub Pages</li>
+            <li>Projekt w trakcie 😄</li>
+        </ul>
+        <button onclick="pokazAlert()">Kliknij mnie</button>
+    </div>
+</section>
+
+<section id="kontakt">
+    <div class="card">
+        <h2>📬 Kontakt</h2>
+        <p>Email: <b>twojemail@example.com</b></p>
+        <p>Discord: <b>TwójNick</b></p>
+    </div>
+</section>
+
+<footer>
+    © 2025 Moja strona
+</footer>
+
+<script>
+    function pokazAlert() {
+        alert("Dzięki za kliknięcie! 😄");
+    }
+</script>
